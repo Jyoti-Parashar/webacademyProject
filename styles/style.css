@@ -1,0 +1,148 @@
+
+/*
+* {
+    border: 1px solid red;
+  }
+  */
+    
+
+body{
+    background-color:#6494ed84;
+    margin: 0rem;
+    font-family:  OpenSans, Arial, sans-serif;
+   /* Arial, Helvetica, sans-serif;*/
+    
+    font-weight: bold;
+}
+
+/* menu*/
+.menu-container{  
+    padding: 0rem;
+}
+
+.menu-container a{
+    color: white;
+    text-decoration: none;  
+}
+.menu-container a:hover{
+    color: aqua;
+}
+
+.menu-container ul{
+    list-style-type: none;
+    padding: 0rem;
+    display: flex;
+    justify-content: flex-end;  
+
+}
+
+.menu-container li{
+    width: 10rem;
+    text-align: center;  
+    
+}
+
+.webacademy{   
+    color: white;
+    font-weight: bold;
+    margin-right: auto;
+}
+  
+
+   /* -----main---------*/ 
+   .img-example {
+    height: 150px;    
+   }
+
+.images-tool-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tool-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0rem;
+    background-color: rgb(244, 237, 223);
+    width:100%;
+}
+
+.tool-container li{
+   
+}
+
+img{
+    margin: 2.5rem 0.5rem;
+    /*width: 18rem;*/
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .5);
+   
+}
+
+figcaption{   
+    text-align: center;   
+    color :#220042;
+    margin: 0rem;
+    padding:0rem ;
+}
+
+.text-align{
+    text-align: center;
+}
+
+h2,h3{
+    margin: 5rem 1rem;
+}
+
+/* ----- MEDIA QUERIES for RESPONSIVE DESIGN ----- */
+
+@media only screen and (max-width: 1100px){
+    .tool-container ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+        align-items: center;
+        list-style-type: none;
+        padding: 0rem;
+        background-color: rgb(244, 237, 223);
+        width:100%;
+    }
+
+    .img-example {
+        width:   20em; 
+       }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    body {
+        margin: 1rem;
+      }
+      p,
+      li {
+        font-size: 16px;
+      }
+   
+      .tool-container ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+        align-items: center;
+        list-style-type: none;
+        padding: 0rem;
+        background-color: rgb(244, 237, 223);
+        width:100%;
+    }
+
+    .img-example {
+        width: 20em;    
+       }
+     
+}
