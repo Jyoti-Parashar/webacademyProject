@@ -6,8 +6,16 @@
   */
     
 
+  :root{
+    --body-background-color: #6494ed84;
+    --box-width: 20rem;
+    --box-height: 2rem;
+    --border-radius: 1rem;
+    --box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .5);
+  }
+
 body{
-    background-color:#6494ed84;
+    background-color:var(--body-background-color);
     margin: 0rem;
     font-family:  OpenSans, Arial, sans-serif;
    /* Arial, Helvetica, sans-serif;*/
@@ -18,10 +26,11 @@ body{
 /* menu*/
 .menu-container{  
     padding: 0rem;
+    --menu-text-color:white;
 }
 
 .menu-container a{
-    color: white;
+    color:var(--menu-text-color);
     text-decoration: none;  
 }
 .menu-container a:hover{
@@ -29,23 +38,24 @@ body{
 }
 
 .menu-container ul{
-    list-style-type: none;
-    padding: 0rem;
+    list-style-type: none;    
     display: flex;
     justify-content: flex-end;  
 
 }
 
 .menu-container li{
-    width: 10rem;
+    width: 5rem;
     text-align: center;  
     
 }
 
 .webacademy{   
-    color: white;
+    color:var(--menu-text-color);
     font-weight: bold;
     margin-right: auto;
+   
+   
 }
   
 
@@ -98,7 +108,44 @@ figcaption{
 
 h2,h3{
     margin: 5rem 1rem;
+    
 }
+
+
+/* -----form ----- */
+
+.img-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-form{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+   
+}
+
+/* -----input ----- */
+
+
+.text-box, .btn-click {
+    width: var(--box-width);
+    height: var(--box-height);
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+
+/* -----button ----- 
+**********not working for text box************
+
+*/
+
+
 
 /* ----- MEDIA QUERIES for RESPONSIVE DESIGN ----- */
 
@@ -146,4 +193,12 @@ h2,h3{
         width: 20em;    
        }
      
+
+       
+.box-form{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
 }
